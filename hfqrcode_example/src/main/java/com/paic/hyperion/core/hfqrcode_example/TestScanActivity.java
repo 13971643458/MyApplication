@@ -130,7 +130,6 @@ public class TestScanActivity extends Activity implements HFQRCodeDelegate {
                 startActivity(new Intent(this, TestGeneratectivity.class));
                 break;
             case R.id.choose_qrcode_pic:
-                // 打开手机中的相册
                 Intent innerIntent = new Intent(Intent.ACTION_GET_CONTENT); // "android.intent.action.GET_CONTENT"
                 innerIntent.setType("image/*");
                 Intent wrapperIntent = Intent.createChooser(innerIntent, "选择二维码图片");
